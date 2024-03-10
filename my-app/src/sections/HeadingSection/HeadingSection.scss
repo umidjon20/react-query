@@ -1,0 +1,170 @@
+header{
+    
+    .header{
+        .header-navlinks{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .navlinks{
+                display: flex;
+                column-gap: 20px;
+                ul{
+                    
+                   
+                    list-style: none;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 150%;
+                    color: #707070;
+                    li{
+                        cursor: pointer;
+                    }
+                }
+            }
+            .logIn-btn{
+                
+                button{
+                    cursor: pointer;
+                    background: none;
+                    border: none;
+                    outline: none;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 150%;
+                   
+                }
+                .sign{
+                    width: 119px;
+                    margin-left: 14px;
+                    border-radius: 8px;
+                    padding:8px 10px;
+                    color: var(--colour-secondary-white-100-general);
+                    background-color: var(--colour-logo-primary);
+                }
+            }
+        }
+    }
+}
+.main-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    row-gap: 100px;
+    .main-heading-text{
+        h1{
+            font-weight: 700;
+            font-size: 112px;
+            line-height: 150%;
+            color: var(--colour-secondary-white-100-general);
+        }
+        .gradient-text{
+            background: linear-gradient(90deg, #fe6783 0%, #ffbf84 100%);;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+            font-size: 112px;
+            line-height: 150%;
+            color:#fff;
+        }
+    }
+    .main-heading-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+        .heading-text{
+            max-width: 694px;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 150%;
+            text-align: center;
+            color: var(--colour-secondary-white-100-general);
+        }
+        .info-btn{
+            display: flex;
+            column-gap: 15px;
+        }
+        .participants{
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            font-weight: 400;
+            font-size: 25px;
+            text-align: center;
+            color: #707070;
+            span{
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 152%;
+                color: var(--colour-secondary-white-100-general);
+            }
+        }
+    }
+}
+
+
+@media  only  screen and (max-width:1200px) {
+    .main-heading .main-heading-text h1,
+    .main-heading .main-heading-text .gradient-text{
+        font-size: 90px;
+    }
+}
+
+@media  only  screen and (max-width:800px){
+
+    header .header .header-navlinks .navlinks{
+        display: none;
+    }
+}
+@media  only  screen and (max-width:768px){
+    .main-heading .main-heading-text h1,
+    .main-heading .main-heading-text .gradient-text{
+        margin-top: 20px;
+        font-size: 60px;
+    }
+    .main-heading .main-heading-info .heading-text{
+        max-width: 560px;
+        font-size: 32px;
+    }
+    .btn-same{
+        max-width: 250px;
+    }
+    .main-heading .main-heading-info .participants{
+        font-size: 20px;
+    }
+}
+@media  only  screen and (max-width:655px){
+    .main-heading .main-heading-text h1,
+    .main-heading .main-heading-text .gradient-text{
+        font-size: 45px;
+    }
+}
+@media  only  screen and (max-width:532px){
+    .main-heading .main-heading-text h1,
+    .main-heading .main-heading-text .gradient-text{
+        font-size: 32px;
+    }
+    .main-heading .main-heading-info .heading-text{
+        max-width: 420px;
+        font-size: 24px;
+    }
+    .btn-same{
+        max-width: 200px;
+    }
+    .main-heading .main-heading-info .participants{
+        font-size: 16px;
+    }
+    
+}
+@media  only  screen and (max-width:532px){
+    .btn-same{
+        
+        max-width: 170px;
+        font-size: 12px;
+    }
+    .main-heading .main-heading-info .participants span{
+        font-size: 18px;
+    }
+}

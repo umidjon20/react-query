@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@300;400;700&display=swap');
+:root {
+    --colour-background-light-grey: #fbfbfd;
+    --colour-logo-primary: #2245e3;
+    --colour-main-grey-900: #141719;
+    --colour-main-grey-800: #393e41;
+    --colour-main-grey-700: #454e54;
+    --colour-main-grey-600: #5d6970;
+    --colour-main-grey-500: #76848c;
+    --colour-main-grey-400: #939ea4;
+    --colour-main-grey-300: #b0b8bc;
+    --colour-main-grey-200: #cdd1d4;
+    --colour-main-grey-100: #e9ebec;
+    --colour-main-blue-900: #091133;
+    --colour-main-blue-800: #111b47;
+    --colour-main-blue-700: #222f65;
+    --colour-main-blue-600: #37447e;
+    --colour-main-blue-500: #505f98;
+    --colour-main-blue-400: #6f7cb2;
+    --colour-main-blue-300: #929ecc;
+    --colour-main-blue-200: #bac3e5;
+    --colour-main-blue-100: #e7ecff;
+    --colour-secondary-white-100-general: #fff;
+    --colour-secondary-yellow-500: #ffd166;
+    --colour-secondary-yellow-400: #fedc8c;
+    --colour-secondary-yellow-300: #fde7b3;
+    --colour-secondary-yellow-200: #fff2d2;
+    --colour-secondary-yellow-100: #fff6e0;
+    --icon-black: #000;
+    
+      --font-family: "Poppins", sans-serif;
+      --second-family: "Roboto", sans-serif;
+    
+  }
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-family);
+  background-color: #000;
+
+}
+
+.container{
+  width: 100%;
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.btn{
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+.btn-same{
+  width: 313px;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  background: var(--colour-logo-primary);
+  color: var(--colour-secondary-white-100-general);
+}
+.btn-cl{
+  background: none;
+  color: #707070;
+}
+.btn-br{
+  border: 1px solid #fff;
+}
+
+
