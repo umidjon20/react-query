@@ -18,7 +18,8 @@ const navLinks = [
     {
         id:4,
         title:'Blog'
-    }
+    },
+
 ]
 function HeadingSection() {
     const links = navLinks.map((item)=>{

@@ -158,7 +158,11 @@ header{
     }
     
 }
-@media  only  screen and (max-width:532px){
+@media  only  screen and (max-width:450px){
+    .main-heading .main-heading-info .info-btn{
+        flex-direction: column;
+        gap: 20px;
+    }
     .btn-same{
         
         max-width: 170px;
