@@ -7,6 +7,7 @@ import Footer from './sections/Footer/Footer'
 import { Home } from './components/Home'
 import { Superhero } from './components/Superhero'
 import { RQSuperHero } from './components/RQSuperHero'
+import { HerosDetails } from './components/HerosDetails'
 
 import './App.scss'
 
@@ -34,6 +35,8 @@ function App() {
         <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/super-heros' element={<Superhero/>} />
+        <Route path='/heros-details/:heroId' element={<HerosDetails/>} />
+
         <Route path='/rq-super-heros' element={<RQSuperHero/>} />
         </Routes>
       </div>
