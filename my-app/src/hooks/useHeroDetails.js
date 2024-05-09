@@ -1,10 +1,20 @@
-import { useQuery } from "react-query"
+import { useQuery, useQueryClient } from "react-query"
 import axios from "axios"
 
-const fetchUserData = heroId => {
+const fetchUserData = ({queryKey}) => {
+    const heroId = queryKey[1]
     return axios.get(`http://jsonplaceholder.typicode.com/users/${heroId}`)
 }
 export const useHeroDetails = (heroId) => {
-
-    return useQuery( ['hero', heroId], () => fetchUserData(heroId))
+    const queryClient =  useQueryClient()
+    return useQuery( ['hero', heroId],  fetchUserData,{
+        initialData: ()=>{
+            const hero = queryClient.getQueryData('hero')?.data?.find(hero => hero.id === parseInt(heroId))
+            if(hero){
+                return {data: hero}
+            }else{
+                return undefined
+            }
+        }
+    })
 }
