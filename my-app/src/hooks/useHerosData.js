@@ -8,7 +8,7 @@ const fetchUsersData = ()=> {
 
 const addUser = (user) => {
   // return axios.post('http://jsonplaceholder.typicode.com/users',user)
-  return request({url:'/users',method:'post',data:user})
+  return request({url:'/posts',method:'post',data:user})
 }
 export const useHerosData=(onSuccess,onError)=>{
    return useQuery(
@@ -16,6 +16,8 @@ export const useHerosData=(onSuccess,onError)=>{
         {
           onSuccess,
           onError,
+          
+          
           
         }
         )
@@ -55,7 +57,7 @@ export const useAddUsers = () => {
     },
     onSettled: () => {
       queryClient.invalidateQueries('users')
-    }
+    },
 
   })
 }
